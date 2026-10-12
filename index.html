@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050b14">
+<meta name="description" content="Madeira Flight Zone — spotting de aviões no Aeroporto da Madeira, vídeos, fotografias e curiosidades da aviação.">
+<title>Madeira Flight Zone ✈</title>
+<style>
+:root{--bg:#050912;--panel:#0b1422;--blue:#20b7ff;--blue2:#0877ff;--text:#f4f8ff;--muted:#a7b7cc;--line:#1a2d45}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:#050912eF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.navinner{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:.5px}.brand span{color:var(--blue)}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}.links a:hover{color:var(--blue)}
+.hero{min-height:600px;display:grid;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 40%,#07518b66,transparent 40%),linear-gradient(120deg,#050912 20%,#07182a 70%,#03101d)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050912 0%,#050912d9 42%,#05091233 100%);pointer-events:none}
+.hero-bg{position:absolute;inset:0;opacity:.46;background:linear-gradient(140deg,transparent 35%,#0c4d7b55),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero-content{position:relative;z-index:1;padding:90px 0;max-width:720px}.eyebrow{color:var(--blue);font-size:.82rem;letter-spacing:3px;text-transform:uppercase;font-weight:800}.hero h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:.98;margin:16px 0 24px;letter-spacing:-2px}.hero h1 span{color:var(--blue)}.hero p{max-width:590px;color:#d2deed;font-size:1.1rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:9px;font-weight:800;border:1px solid #2b5477;transition:.2s}.btn.primary{background:linear-gradient(135deg,var(--blue),var(--blue2));border:0;color:#00101b}.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section-head h2{font-size:clamp(1.8rem,4vw,2.8rem);margin:0;line-height:1.1}.section-head p{margin:8px 0 0;color:var(--muted)}.tag{color:var(--blue);font-size:.78rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#0c1929,#08111e);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-4px);border-color:#2378a8}.thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#0e2b46,#07101b);display:grid;place-items:center;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover;display:block}.thumb .placeholder{font-size:2.7rem;filter:drop-shadow(0 0 14px #20b7ff55)}.card-body{padding:18px}.card h3{margin:0 0 8px;font-size:1.08rem}.card p{color:var(--muted);font-size:.94rem;margin:0 0 14px}.textlink{color:var(--blue);font-weight:800;font-size:.92rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px}.panel h3{margin:0 0 10px}.panel p{color:var(--muted)}.metar{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:1rem;background:#030812;border:1px solid #163a58;border-radius:10px;padding:16px;overflow-wrap:anywhere;color:#bdeaff}.small{font-size:.85rem;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.fact{padding:16px;background:#07111f;border:1px solid var(--line);border-radius:12px}.fact strong{display:block;color:var(--blue);font-size:1.3rem;margin-bottom:4px}.fact span{color:var(--muted);font-size:.9rem}
+.cta{background:radial-gradient(ellipse at 80% 0%,#0877ff33,transparent 45%),#071321;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}.cta h2{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 10px}.cta p{color:var(--muted);max-width:650px;margin:0 auto 24px}
+footer{padding:28px 0;color:var(--muted);font-size:.88rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:800px){.links{gap:11px;font-size:.82rem}.grid{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.hero{min-height:540px}.hero h1{letter-spacing:-1px}}
+@media(max-width:540px){.navinner{align-items:flex-start;padding:15px 0;flex-direction:column}.links{gap:12px}.grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}section{padding:55px 0}.hero-content{padding:75px 0}.facts{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav><div class="wrap navinner">
+<a class="brand" href="#inicio">✈ MADEIRA <span>FLIGHT ZONE</span></a>
+<div class="links"><a href="#videos">Vídeos</a><a href="#galeria">Galeria</a><a href="#lpma">METAR LPMA</a><a href="#curiosidades">Curiosidades</a><a href="#contacto">Redes</a></div>
+</div></nav>
+<header class="hero" id="inicio"><div class="hero-bg"></div><div class="wrap"><div class="hero-content">
+<div class="eyebrow">Madeira • Aviation spotting</div>
+<h1>Onde a aviação<br>encontra a <span>Madeira.</span></h1>
+<p>Vídeos, fotografias e momentos únicos dos aviões que passam pelo Aeroporto Internacional da Madeira — Cristiano Ronaldo.</p>
+<div class="actions"><a class="btn primary" href="https://www.youtube.com/@madeira_flight_zone" target="_blank" rel="noopener">▶ Ver no YouTube</a><a class="btn" href="https://www.instagram.com/madeira_flight_zone/" target="_blank" rel="noopener">◎ Instagram</a></div>
+</div></div></header>
+<main>
+<section id="videos"><div class="wrap"><div class="section-head"><div><div class="tag">Do canal para aqui</div><h2>Vídeos & Shorts</h2><p>Vai ao canal para veres as últimas aterragens, descolagens e movimentos.</p></div><a class="textlink" href="https://www.youtube.com/@madeira_flight_zone" target="_blank" rel="noopener">Abrir canal ↗</a></div>
+<div class="grid">
+<article class="card"><div class="thumb"><div class="placeholder">▶</div></div><div class="card-body"><h3>Últimos vídeos</h3><p>Spotting de aviões na Madeira, com vistas do aeroporto e da aproximação.</p><a class="textlink" href="https://www.youtube.com/@madeira_flight_zone/videos" target="_blank" rel="noopener">Ver vídeos ↗</a></div></article>
+<article class="card"><div class="thumb"><div class="placeholder">✈</div></div><div class="card-body"><h3>YouTube Shorts</h3><p>Momentos rápidos: aterragens, descolagens e aviões especiais.</p><a class="textlink" href="https://www.youtube.com/@madeira_flight_zone/shorts" target="_blank" rel="noopener">Ver Shorts ↗</a></div></article>
+<article class="card"><div class="thumb"><div class="placeholder">📸</div></div><div class="card-body"><h3>Fotografia de aviação</h3><p>Segue a página para mais fotografias e novidades de spotting.</p><a class="textlink" href="https://www.instagram.com/madeira_flight_zone/" target="_blank" rel="noopener">Ver Instagram ↗</a></div></article>
+</div></div></section>
+<section id="galeria" style="background:#070e18;border-block:1px solid var(--line)"><div class="wrap"><div class="section-head"><div><div class="tag">Galeria</div><h2>Momentos da pista</h2><p>Esta área está pronta para receber as tuas fotografias originais.</p></div></div>
+<div class="grid">
+<div class="card"><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=900&q=80" alt="Avião de passageiros no aeroporto"></div><div class="card-body"><h3>À espera da próxima chegada</h3><p>Substitui esta imagem por uma fotografia tua da Madeira.</p></div></div>
+<div class="card"><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1474302770737-173ee21bab63?auto=format&fit=crop&w=900&q=80" alt="Avião em voo"></div><div class="card-body"><h3>Aviação em voo</h3><p>Adiciona aqui uma das tuas melhores capturas.</p></div></div>
+<div class="card"><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80" alt="Avião sobre as nuvens"></div><div class="card-body"><h3>Vistas do céu</h3><p>As fotografias finais podem ser trocadas facilmente no HTML.</p></div></div>
+</div><p class="small" style="margin-top:18px">Nota: as imagens de demonstração vêm de Unsplash. Para a versão final, o ideal é usar as tuas próprias fotografias.</p></div></section>
+<section id="lpma"><div class="wrap"><div class="section-head"><div><div class="tag">Condições meteorológicas</div><h2>METAR do LPMA</h2><p>Informação meteorológica reportada para o Aeroporto da Madeira.</p></div></div>
+<div class="two"><div class="panel"><h3>METAR mais recente disponível</h3><div class="metar" id="metar">A carregar METAR de LPMA…</div><p class="small" id="metar-time">A tentar obter dados da Aviation Weather Center.</p><button class="btn" id="refresh" type="button">↻ Atualizar METAR</button></div>
+<div class="panel"><h3>Importante</h3><p>O METAR é um relatório meteorológico, não uma autorização para voar. Para decisões operacionais, confirma sempre a informação oficial e atualizada junto das fontes aeronáuticas competentes.</p><p class="small">Se os dados não carregarem, pode ser uma falha temporária da API ou da ligação. Experimenta atualizar a página.</p></div></div>
+</div></section>
+<section id="curiosidades" style="background:#070e18;border-block:1px solid var(--line)"><div class="wrap"><div class="section-head"><div><div class="tag">Sabias que?</div><h2>Curiosidades do LPMA</h2><p>Um aeroporto conhecido pela sua localização e aproximação exigente.</p></div></div>
+<div class="facts"><div class="fact"><strong>LPMA</strong><span>Código ICAO do Aeroporto Internacional da Madeira.</span></div><div class="fact"><strong>Funchal / Santa Cruz</strong><span>O aeroporto fica na zona de Santa Cruz, na ilha da Madeira.</span></div><div class="fact"><strong>Pista especial</strong><span>A pista foi ampliada com uma estrutura apoiada em pilares sobre o terreno costeiro.</span></div><div class="fact"><strong>Spotting</strong><span>Vento, relevo e condições meteorológicas tornam cada movimento interessante para observar.</span></div></div>
+</div></section>
+<section class="cta" id="contacto"><div class="wrap"><div class="tag">Faz parte da comunidade</div><h2>Segue a Madeira Flight Zone</h2><p>Se gostas de aviões, aterragens e fotografia de aviação, acompanha as novidades nas redes.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://www.youtube.com/@madeira_flight_zone?sub_confirmation=1" target="_blank" rel="noopener">Subscrever no YouTube</a><a class="btn" href="https://www.instagram.com/madeira_flight_zone/" target="_blank" rel="noopener">Seguir no Instagram</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Madeira Flight Zone</span><span>Feito com paixão pela aviação ✈</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+async function loadMetar(){
+ const box=document.getElementById('metar'), info=document.getElementById('metar-time');
+ box.textContent='A carregar METAR de LPMA…'; info.textContent='A consultar a Aviation Weather Center.';
+ try{
+  const response=await fetch('https://aviationweather.gov/api/data/metar?ids=LPMA&format=json&hours=3');
+  if(!response.ok) throw new Error('HTTP '+response.status);
+  const data=await response.json();
+  if(!Array.isArray(data)||!data.length) throw new Error('Sem dados recentes');
+  const m=data[0]; box.textContent=m.rawOb||m.raw_text||JSON.stringify(m);
+  info.textContent='Último relatório disponível. Fonte: Aviation Weather Center.';
+ }catch(e){
+  box.textContent='Não foi possível carregar automaticamente. Consulta uma fonte meteorológica aeronáutica atualizada e tenta novamente.';
+  info.textContent='A ligação à fonte de dados falhou ('+e.message+').';
+ }
+}
+document.getElementById('refresh').addEventListener('click',loadMetar);loadMetar();
+</script>
+</body></html>
